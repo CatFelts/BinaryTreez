@@ -18,6 +18,21 @@ public class FunFunSort {
 		kLargestProb.sortKPasses(4);
 		System.out.println("after finding 4 largest elements:");
 		kLargestProb.printLastK(4);
+		
+		
+		MergeSort mSort = new MergeSort();
+		
+		print(mSort.sort(myArray));
+	}
+	
+	public static void print(int[] arr)
+	{
+		System.out.print("[ ");
+		for(int i = 0; i < arr.length; i++)
+		{
+			System.out.print(", " + arr[i]);
+		}
+		System.out.print(" ]");
 	}
 
 }
